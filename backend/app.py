@@ -36,7 +36,7 @@ def analyze_csv():
             return jsonify({"error": "No selected file"}), 400
         df=pd.read_csv(file)
         print("CSV Columns:", df.columns.tolist())  # debug line
-        if "review" not in df.columns:
+        if "review" or "Review" not in df.columns:
             return jsonify({"error": "CSV must have 'review' column"}),400
         result=[]
         for text in df['review']:

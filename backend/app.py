@@ -39,7 +39,7 @@ def analyze_csv():
         if "review" or "Review" not in df.columns:
             return jsonify({"error": "CSV must have 'review' column"}),400
         result=[]
-        for text in df['review']:
+        for text in df['review'] or df['Review']:
             text = str(text).strip()
             if text:
                 prediction=predict_sentiment(text)

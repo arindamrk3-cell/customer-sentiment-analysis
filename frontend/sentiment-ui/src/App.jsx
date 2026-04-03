@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 function App() {
   const [text, setText] = useState("");
@@ -17,7 +18,7 @@ function App() {
     try {
       setLoading(true);
 
-      const response = await axios.post("http://127.0.0.1:5000/analyze", {
+      const response = await axios.post(`${API_BASE_URL}/analyze`, {
         text: text,
       });
 
@@ -46,7 +47,7 @@ function App() {
       setLoading(true);
 
       const response = await axios.post(
-        "http://127.0.0.1:5000/analyze_csv",
+        `${API_BASE_URL}/analyze_csv`,
         formData,
         {
           headers: {

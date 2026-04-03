@@ -6,7 +6,6 @@ A modern AI-powered customer sentiment analysis web app built using **Flask + Re
 
 - Single review sentiment analysis
 - CSV upload for bulk review analysis
-- Smart keyword insights
 - Review history tracking
 - Modern premium UI dashboard
 - Positive / Negative / Neutral sentiment classification

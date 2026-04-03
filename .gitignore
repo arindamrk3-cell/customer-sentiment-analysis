@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+.env
+venv/
+ENV/
+env/
+instance/
+
+# Flask
+backend/__pycache__/
+backend/instance/
+
+# Node / React
+frontend/sentiment-ui/node_modules/
+frontend/sentiment-ui/dist/
+frontend/sentiment-ui/.vite/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

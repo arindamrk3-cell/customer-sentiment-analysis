@@ -57,6 +57,7 @@ function App() {
       );
 
       const data = response.data;
+      
       setHistory(data);
 
       if (data.length > 0) {

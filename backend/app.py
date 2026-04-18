@@ -7,7 +7,7 @@ app=Flask(__name__)
 CORS(app)
 @app.route("/")
 def home():
-    return "Customer Sentiment Analysis Backend Running!"
+    return "Customer Sentiment Analysis Backend Running successfully!"
 @app.route("/analyze",methods=['POST'])
 def analyze():
     try:
